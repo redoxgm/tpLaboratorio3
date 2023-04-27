@@ -19,24 +19,16 @@ function botonMeGusta(){
     numeroLikeactualizado = numeroLike + 1;
     document.getElementById("numeroLike").innerText= numeroLikeactualizado;
     
-    console.log(contador)
-
-    if(contador === 1){
+    if(numeroLikeactualizado > 0){
         
-        console.log("yyya")
-    }
-    
+        botonMeGusta.disabled = true;
+        console.log("git")
 
+        }
     
    
-}
-
-
-// function prueba(){
-//     document.getElementById("btnLike").addEventListener('click',botonMeGusta);
-// }
-
-
+    }
+    
 function comentarios(){
 
     let txtComentario = document.getElementById("txtComentario").value;
@@ -69,10 +61,6 @@ function comentarios(){
        })
 
 
-
-
-
-      
      
     }else{
        
