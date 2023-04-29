@@ -1,67 +1,85 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Oswald&family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
     <title>Document</title>
 </head>
+
 <body>
-    <div>
-        
-        <p>Globo <img src="https://i.imgur.com/Qx8uR89.png" alt="" > </p> 
+    <div class="grid-layout">
 
-        <input type="text" placeholder="Ingrese Usuario" id="txtUsuario">
+        <div Class="Superior">
 
-       
-        
-        <br>
-        <br>
-    </div>
-
-    <div>
-       
-        <img src="https://i.imgur.com/99qgQJy.jpeg" alt="Foto de Perfil"  width="100 px">
-        <p>jane Doe</p>
-        <p>Email: jane_doe@rmail.com</p>
-        <p>Fecha Nacimiento: </p>
-        <p>Telefono: 918-936-4569</p>
-        <p>Ciudad:tokyo,Japon</p>
-
-        <label ><input type="button" value="Seguir" id="btnSeguir" ></label>
-
-    </div>
-
-    <div>
-
-        <h3>Sobre mi</h3>
-        <p>hola me gusta viajary actualmente vivo en tokyo programadora </p>
-
-    </div>
+            <p><img src="https://i.imgur.com/Qx8uR89.png" alt=""> </p>
+            <input type="text" placeholder="Ingrese Usuario" id="txtUsuario">
 
 
-    <div>
-        <p>Publicado hace 1 Semana </p>
-
-        <img src="https://i.imgur.com/bq9db41.jpeg" alt="Imagen" srcset="" width="100px" >
-
-        <label ><input type="button" value="Me gusta"id="btnLike" onclick="this.disabled = true" ></label> <p id="contadorLike"> <a id="numeroLike">200</a>  Like</p>
 
 
-        <h5>Comentarios</h5>
+            <br>
+            <br>
+        </div>
 
-        <div >
-            <p>juan Perez: !que buena Foto!</p>
-            <p>Sofia Paz:  tengo que volver algun dia </p>
-            <div id="divComentarios">
+        <div class="Info-Profile">
+
+            <img src="https://i.imgur.com/99qgQJy.jpeg" alt="Foto de Perfil" width="300px" id="foto-perfil">
+            <p>Jane Doe</p>
+            <p>Email: jane_doe@rmail.com</p>
+            <p>Fecha Nacimiento: 12/04/1996 </p>
+            <p>Telefono: 918-936-4569</p>
+            <p>Ciudad:tokyo,Japon</p>
+            <p>Trabajando en: <a href="https://canon.jp" target="_blank"
+                    rel="noopener noreferrer"><strong>Canon</strong></a></p>
+
+            <label><input type="button" value="Seguir" id="btnSeguir"></label>
+
+        </div>
+
+
+
+        <div class="About-Me">
+
+            <h3>Sobre mi</h3>
+            <p>hola me gusta viajary actualmente vivo en tokyo programadora </p>
+
+        </div>
+
+
+        <div class="Perfil-Post">
+            <p>Publicado hace 1 Semana </p>
+
+            <img src="https://i.imgur.com/bq9db41.jpeg" alt="Imagen" srcset="" width="300px" id="Posteo">
+
+            <label><input type="button" value="Me gusta" id="btnLike" onclick="this.disabled = true"></label>
+            <p id="contadorLike"> <a id="numeroLike">200</a> Like</p>
+
+
+            <h5>Comentarios</h5>
+
+            <div class="Coments">
+                <p>juan Perez: !que buena Foto!</p>
+                <p>Sofia Paz: tengo que volver algun dia </p>
+                <div id="divComentarios">
+
+                </div>
+
+                <input type="text" name="Comentario" id="txtComentario" placeholder="Ingrese su Comentario"> <input
+                    type="button" value="Comentar" id="btnComentar">
+
 
             </div>
-
-            <input type="text" name="Comentario" id="txtComentario" placeholder="Ingrese su Comentario"> <input type="button" value="Comentar" id="btnComentar">
-
-        
-    </div>
+        </div>
 
 </body>
+
 </html>

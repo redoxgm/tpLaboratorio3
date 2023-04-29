@@ -1,0 +1,89 @@
+body{
+    background-color: antiquewhite;
+    margin:2em;
+}
+.grid-layout{
+display: grid;
+background-color: greenyellow;
+width: 100%;
+height: 1400px;
+
+grid-template-areas: 'superior superior'
+                    'perfil perfil '
+                    'posteo sobremi';
+
+grid-template-rows: 10% 27% auto; 
+grid-template-columns: 70% auto;                   
+
+
+
+
+
+       
+    
+   
+}
+.Superior{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-color: aqua;
+    margin-top: 0;
+}
+#txtUsuario{
+    position:absolute;
+    right: 100px;
+}
+#btnSeguir{
+    position:absolute;
+    right: 100px;
+}
+.Info-Profile{
+    margin: 1.0em;
+    font-size: 20px;
+    grid-area: perfil;
+    text-align: initial;
+    background-color: blueviolet;
+    font-family: 'Oswald', sans-serif;
+    border-radius: 1.5em;
+}
+.Perfil-Post{
+    margin: 1.0em;
+    grid-area: posteo;
+    text-align: center;
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+    border-radius: 2.5em;
+    
+}
+.About-Me{
+    margin: 1.0em;
+    grid-area: sobremi;
+    background-color: firebrick;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 2.5em;
+    
+}
+.Foto{
+    
+
+    grid-area: foto;
+    
+    
+}
+#foto-perfil{
+    float: left;
+    border-radius: 60%;
+    margin: 20px 50px 25px 50px;
+}
+#Posteo{
+    width: 90%;
+    height: 70%;
+    margin: 20px auto auto auto;
+}
+#btnLike{
+    display: inline-block;
+  vertical-align: text-bottom;
+}
