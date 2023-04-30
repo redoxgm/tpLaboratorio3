@@ -1,0 +1,127 @@
+body{
+    background-color: rgb(208, 210, 216);
+    margin:2em;
+}
+.grid-layout{
+display: grid;
+
+width: 100%;
+height: 1400px;
+
+grid-template-areas: 'superior superior'
+                    'perfil perfil '
+                    'posteo sobremi';
+
+grid-template-rows: 10% 27% auto; 
+grid-template-columns: 70% auto;  
+                
+   
+}
+
+
+.Superior{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px;
+    background-color: rgb(10, 150, 168);
+    margin-top: 0;
+  
+}
+#txtUsuario{
+    position:absolute;
+    right: 200px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+#btnSeguir{
+    position:absolute;
+    right: 100px;
+    background-color: rgb(10, 150, 168);
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+.Info-Profile{
+    margin: 1.0em;
+    font-size: 20px;
+    grid-area: perfil;
+    text-align: initial;
+    background-color: rgb(255, 255, 255);
+   
+    border-radius: 1.5em;
+}
+.Perfil-Post{
+    margin: 1.0em;
+    padding: 40px;
+    grid-area: posteo;
+    text-align: center;
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 20px;
+    
+}
+.About-Me{
+    
+    grid-area: sobremi;
+    margin: 1.0em;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 2.5em;
+    text-align: justify;
+    font-size: small;
+
+}
+h3{
+    text-align: left;
+}
+.coments{
+    text-align: left;
+}
+.Foto{
+
+    grid-area: foto;
+
+}
+
+#Posteo{
+    width: 90%;
+    height: 70%;
+    margin: 20px;
+    border-radius: 20px;
+    align-items: center;
+}
+#btnLike{
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-color: rgb(213, 217, 223);
+    color:rgb(10, 150, 168) ;
+    border: none;
+    border-radius: 20px;
+
+    width: 100px;
+    height: 50px;
+}
+#btnComentar{
+    background-color: rgb(10, 150, 168);
+    width: 100px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+}
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-track{
+    background-color:  rgb(208, 210, 216);
+    border-radius: 50px;
+}
+::-webkit-scrollbar-thumb{
+   background-color:  rgb(10, 150, 168);
+    border-radius: 50px;
+}
