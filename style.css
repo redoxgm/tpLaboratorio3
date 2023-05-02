@@ -27,13 +27,17 @@ grid-template-columns: 70% auto;
     margin-top: 0;
 }
 #txtUsuario{
-    position:absolute;
-    right: 100px;
+    position: absolute;
+    right: 100px; 
+    top: 30px;
 }
+
 #btnSeguir{
     position:absolute;
     right: 100px;
+    top: 200px;
 }
+
 .Info-Profile{
     margin: 1.0em;
     font-size: 20px;
@@ -47,7 +51,7 @@ grid-template-columns: 70% auto;
     margin: 1.0em;
     grid-area: posteo;
     text-align:left;
-    
+    font-size: 1.5em;
     font-family: 'Karla', sans-serif;
     border-radius: 2.5em;
     
@@ -127,6 +131,7 @@ h3{
     text-align: left;
     font-family: 'Poppins', sans-serif;
     
+    
 }
 
 #divComentarios{
@@ -185,8 +190,3 @@ h3{
     height: 20px;
 }
 
-#parrafoComentario{
-    text-align: left;
-    font-family: 'Poppins', sans-serif;
-    
-}
