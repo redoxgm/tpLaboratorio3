@@ -1,55 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap" rel="stylesheet">
-
-    <title>Globo</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@300&family=Oswald&family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
 </head>
-<body>
-    <div class="grid-layout"></div>
-        <div Class="Superior">
-            
-            <p><img class="Logo" src= "https://i.imgur.com/Qx8uR89.png" alt=""> </p>
 
+<body>
+    <div class="grid-layout">
+
+        <div Class="Superior">
+
+            <p><img src="https://i.imgur.com/Qx8uR89.png" alt=""> </p>
             <input type="text" placeholder="Ingrese Usuario" id="txtUsuario">
+
+
+
 
             <br>
             <br>
         </div>
 
         <div class="Info-Profile">
-        
-            <img src=https://i.imgur.com/99qgQJy.jpeg" alt="Foto de Perfil"  width="100 px">
-            <h1>Jean Doe</h1>
-                <p><strong>Email: </strong> jane_doe@rmail.com</p>
-                <p><strong>Fecha Nacimiento:</strong> 12/04/1996 </p>
-                <p><strong>Telefono:</strong> 918-936-4569</p>
-                <p><strong>Ciudad:</strong> Tokyo,Japón</p>
-                <p><strong>Trabajando en:</strong> <a href="https://canon.jp" target="_blank"
-                        rel="noopener noreferrer"><strong>Canon</strong></a></p>
 
-            <label ><input type="button" value="Seguir" id="btnSeguir" ></label>
+            <img src="https://i.imgur.com/99qgQJy.jpeg" alt="Foto de Perfil" width="300px" id="foto-perfil">
+            <p>Jane Doe</p>
+            <p>Email: jane_doe@rmail.com</p>
+            <p>Fecha Nacimiento: 12/04/1996 </p>
+            <p>Telefono: 918-936-4569</p>
+            <p>Ciudad:tokyo,Japon</p>
+            <p>Trabajando en: <a href="https://canon.jp" target="_blank"
+                    rel="noopener noreferrer"><strong>Canon</strong></a></p>
+
+            <label><input type="button" value="Seguir" id="btnSeguir"></label>
 
         </div>
+
+
 
         <div class="About-Me">
 
             <h3>Sobre mi</h3>
-            <p>
-                ¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Tokio,
+            <p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Tokio,
                 Japón. Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando
                 el constraste entre la arquitectura moderna y las tradiciones centenarias que conviven 
                 en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta
                 templos serenos y jardines tranquilos, encuentro inspiracion en cada rincon de esta
-                increible ciudad. 
-            </p>
+                increible ciudad. </p>
 
         </div>
 
@@ -57,28 +63,29 @@
         <div class="Perfil-Post">
             <p>Publicado hace 1 Semana </p>
 
-            <img src="https://i.imgur.com/bq9db41.jpeg" alt="Imagen" srcset="" width="100px" >
+            <img src="https://i.imgur.com/bq9db41.jpeg" alt="Imagen" srcset="" width="300px" id="Posteo">
 
-            <label ><input type="button" value="Me gusta"id="btnLike" onclick="this.disabled = true" >
-            </label> <p id="contadorLike"> <a id="numeroLike">200</a>  Like</p>
+            <label><input type="button" value="Me gusta" id="btnLike" onclick="this.disabled = true"></label>
+            <p id="contadorLike"> <a id="numeroLike">200</a> Like</p>
 
 
-            <h3>Comentarios</h3>
+            <h5>Comentarios</h5>
 
-            <div class="coments">
-
-         
+            <div class="Coments">
                 <p>juan Perez: !que buena Foto!</p>
-                <p>Sofia Paz:  tengo que volver algun dia </p>
-                <div id="divComentarios">
+                <p>Sofia Paz: tengo que volver algun dia </p>
+
+                <div id="divComentarios" class="Coments">
+
+                </div>
+
+                <input type="text" name="Comentario" id="txtComentario" placeholder="Ingrese su Comentario"> <input
+                    type="button" value="Comentar" id="btnComentar">
+
 
             </div>
-
-            <input type="text" name="Comentario" id="txtComentario" placeholder="Ingrese su Comentario"> <input type="button" value="Comentar" id="btnComentar">
-
-            
         </div>
-    </div>   
 
 </body>
+
 </html>
