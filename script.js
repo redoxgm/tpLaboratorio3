@@ -22,7 +22,7 @@ function botonMeGusta(){
     if(numeroLikeactualizado > 0){
         
         botonMeGusta.disabled = true;
-        console.log("git")
+       
 
         }
     
@@ -53,6 +53,7 @@ function comentarios(){
 
        document.getElementById("divComentarios").appendChild(parrafo);
 
+       
        document.getElementById("btnEliminar").addEventListener('click',function(){
 
             let borrar = document.getElementById("parrafoComentario");
@@ -64,10 +65,19 @@ function comentarios(){
      
     }else{
        
-       let nuevoComentarios = document.createTextNode("Usuario no ingresado o Coemntario en blanco")
-       let parrafo =document.createElement('h3');
-       parrafo.appendChild(nuevoComentarios);
-       document.getElementById("divComentarios").appendChild(parrafo);
+       let nuevoComentarios = document.createTextNode("Usuario no ingresado o Comentario en blanco")
+       let parrafoError =document.createElement('h3');
+       parrafoError.id = "error";
+       parrafoError.appendChild(nuevoComentarios);
+       document.getElementById("divComentarios").appendChild(parrafoError);
+       
+       function eliminarError(){
+        let borrar = document.getElementById("error");
+            let elemento = borrar.parentNode;
+            elemento.removeChild(borrar);
+       }
+       
+       setTimeout(eliminarError,3000)
 
     }
 
