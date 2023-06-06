@@ -1,44 +1,47 @@
-body{
+body {
     background-color: rgb(208, 210, 216);
-    margin:2em;
+    margin: 2em;
 }
-.grid-layout{
-display: grid;
 
-width: 100%;
-height: 1400px;
+.grid-layout {
+    display: grid;
 
-grid-template-areas: 'superior superior'
-                    'perfil perfil '
-                    'posteo sobremi';
+    width: 100%;
+    height: 1400px;
 
-grid-template-rows: 10% 27% auto; 
-grid-template-columns: 70% auto;                   
-  
-   
+    grid-template-areas: 'superior superior'
+        'perfil perfil '
+        'posteo sobremi';
+
+    grid-template-rows: 10% 27% auto;
+    grid-template-columns: 70% auto;
+
+
 }
-.Superior{
+
+.Superior {
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    
+
     background-color: rgb(10, 150, 168);
     margin-top: 0;
 }
-#txtUsuario{
+
+#txtUsuario {
     position: absolute;
-    right: 100px; 
+    right: 100px;
     top: 30px;
 }
 
-#btnSeguir{
-    position:absolute;
+#btnSeguir {
+    position: absolute;
     right: 100px;
     top: 200px;
 }
 
-.Info-Profile{
+.Info-Profile {
     margin: 1.0em;
     font-size: 20px;
     grid-area: perfil;
@@ -47,65 +50,69 @@ grid-template-columns: 70% auto;
     font-family: 'Oswald', sans-serif;
     border-radius: 1.5em;
 }
-.Perfil-Post{
+
+.Perfil-Post {
     margin: 1.0em;
     grid-area: posteo;
-    text-align:left;
+    text-align: left;
     font-size: 1.5em;
     font-family: 'Karla', sans-serif;
     border-radius: 2.5em;
-    
-    
+
+
 }
 
-#divComentarios{
+#divComentarios {
 
     grid-area: posteo;
 }
 
-.About-Me{
+.About-Me {
     margin: 1.0em;
     grid-area: sobremi;
     font-family: 'Poppins', sans-serif;
     border-radius: 2.5em;
     text-align: justify;
     font-size: 1.5em;
- 
-    
+
+
 }
-.Foto{
-    
+
+.Foto {
+
 
     grid-area: foto;
-    
-    
+
+
 }
-#foto-perfil{
+
+#foto-perfil {
     float: left;
     border-radius: 60%;
     margin: 20px 50px 25px 50px;
 }
-#Posteo{
+
+#Posteo {
     width: 90%;
     height: 70%;
     margin: 20px auto auto auto;
 
 }
 
-#btnLike{
+#btnLike {
     display: inline-block;
     vertical-align: text-bottom;
     float: right;
-   
-    
+
+
 }
 
-#contadorLike{
+#contadorLike {
     float: right;
 }
 
-#txtUsuario{
-    position:absolute;
+#txtUsuario {
+    position: absolute;
     right: 200px;
     width: 200px;
     height: 50px;
@@ -113,8 +120,8 @@ grid-template-columns: 70% auto;
     border-radius: 20px;
 }
 
-#btnSeguir{
-    position:absolute;
+#btnSeguir {
+    position: absolute;
     right: 100px;
     background-color: rgb(10, 150, 168);
     width: 100px;
@@ -123,46 +130,48 @@ grid-template-columns: 70% auto;
     border-radius: 20px;
 }
 
-h3{
+h3 {
     text-align: left;
 }
 
-.coments{
+.coments {
     text-align: left;
     font-family: 'Poppins', sans-serif;
-    
-    
+
+
 }
 
-#divComentarios{
+#divComentarios {
     text-align: left;
 }
 
-.Foto{
+.Foto {
 
     grid-area: foto;
 
 }
 
-#Posteo{
+#Posteo {
     width: 90%;
     height: 70%;
     margin: 20px;
     border-radius: 20px;
     align-items: center;
 }
-#btnLike{
+
+#btnLike {
     display: inline-block;
     vertical-align: text-bottom;
     background-color: rgb(213, 217, 223);
-    color:rgb(10, 150, 168) ;
+    color: rgb(10, 150, 168);
     border: none;
     border-radius: 20px;
 
     width: 100px;
     height: 50px;
 }
-#btnComentar{
+
+#btnComentar {
     background-color: rgb(10, 150, 168);
     width: 100px;
     height: 50px;
@@ -170,7 +179,7 @@ h3{
     border-radius: 20px;
 }
 
-#txtComentario{
+#txtComentario {
     right: 200px;
     width: 200px;
     height: 50px;
@@ -178,15 +187,14 @@ h3{
     border-radius: 20px;
 }
 
-#btnEliminar{
+#btnEliminar {
     display: inline-block;
     vertical-align: text-bottom;
     background-color: rgb(231, 39, 14);
-    color:rgb(12, 13, 13) ;
+    color: rgb(12, 13, 13);
     border: none;
     border-radius: 20px;
 
     width: 100px;
     height: 20px;
 }
-

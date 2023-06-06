@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/vue@3.3.2/dist/vue.global.js"></script>
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,15 +16,12 @@
 </head>
 
 <body>
-    <div class="grid-layout">
+    <div class="grid-layout" id="app">
 
         <div Class="Superior">
 
-            <p><img src="https://i.imgur.com/Qx8uR89.png" alt=""> </p>
+            <p><img :src="fotoGlobo" alt=""> </p>
             <input type="text" placeholder="Ingrese Usuario" id="txtUsuario">
-
-
-
 
             <br>
             <br>
@@ -32,34 +29,24 @@
 
         <div class="Info-Profile">
 
-            <img src="https://i.imgur.com/99qgQJy.jpeg" alt="Foto de Perfil" width="300px" id="foto-perfil">
-            <p>Jane Doe</p>
-            <p>Email: jane_doe@rmail.com</p>
-            <p>Fecha Nacimiento: 12/04/1996 </p>
-            <p>Telefono: 918-936-4569</p>
-            <p>Ciudad:tokyo,Japon</p>
-            <p>Trabajando en: <a href="https://canon.jp" target="_blank"
-                    rel="noopener noreferrer"><strong>Canon</strong></a></p>
+            <img :src="fotoPerfil" alt="Foto de Perfil" width="300px" id="foto-perfil">
+            <p v-for="datos in datosPersonales">{{datos}}</p>
 
-            <label><input type="button" value="Seguir" id="btnSeguir"></label>
+            <button id="btnSeguir" @click="seguir">{{ btnSeguir}}</button>
 
         </div>
 
 
 
-        <div class="About-Me">
+        <div class=" About-Me">
 
             <h3>Sobre mi</h3>
-            <p>¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Tokio,
-                Japón. Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando
-                el constraste entre la arquitectura moderna y las tradiciones centenarias que conviven 
-                en esta metrópolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta
-                templos serenos y jardines tranquilos, encuentro inspiracion en cada rincon de esta
-                increible ciudad. </p>
+            <p>{{descripcion}} </p>
 
         </div>
 
-
+        <!-- 
+            pasar a componente
         <div class="Perfil-Post">
             <p>Publicado hace 1 Semana </p>
 
@@ -83,8 +70,11 @@
                     type="button" value="Comentar" id="btnComentar">
 
 
-            </div>
-        </div>
+            </div>-->
+    </div>
+
+    <script src="script.js"></script>
+    <script>const mountedApp = app.mount('#app')</script>
 
 </body>
 
