@@ -21,7 +21,7 @@
         <div Class="Superior">
 
             <p><img :src="fotoGlobo" alt=""> </p>
-            <input type="text" placeholder="Ingrese Usuario" id="txtUsuario">
+            <input id="txtUsuario" placeholder="Ingresar usuario" v-model="usuario">
 
             <br>
             <br>
@@ -35,28 +35,52 @@
             <button id="btnSeguir" @click="seguir">{{ btnSeguir}}</button>
 
         </div>
-
-
-
         <div class=" About-Me">
 
             <h3>Sobre mi</h3>
             <p>{{descripcion}} </p>
 
         </div>
-        <div class="Perfil-Post">
 
-            <comentarios></comentarios>
+        <div class="Perfil-Post">
+            <p>Publicado hace 1 Semana </p>
+
+            <img :src="posteo" alt="Imagen" srcset="" width="300px" id="Posteo">
+            <button id="btnLike" @click="numLike" :disabled="disableButton">Me gusta</button>
+            <div>{{numeroLike}} like </div>
+
+
+
+            <h5>Comentarios</h5>
+
+            <div class="Coments">
+                <p>{{comentario1}}</p>
+
+                <p>{{comentario2}} </p>
+                <div>
+
+                    <p v-for="comentario in nuevoComentario" :key="comentario.id">{{ comentario.usuario }} : {{
+                        comentario.comentario }}</p>
+                    <button id="btnEliminar" @click="eliminarComentario(comentario.id)"
+                        v-if="mostrarBtn">Eliminar</button>
+                </div>
+
+                <div>
+                    <input id="txtComentario" placeholder="Ingrese su Comentario" v-model="comentario">
+
+                    <button id="btnComentar" @click="agregarComentario" :disable="bComentar">Comentar</button>
+                    <p v-if="mostrarError"> No ingreso usuario o comentario</p>
+                </div>
+
+
+            </div>
 
         </div>
-
-
-
     </div>
 
+
     <script src="script.js"></script>
-    <script src="./components/comentarios.js"></script>
-    <script>const mountedApp = app.mount('#app')</script>
+    <script>const mountedApp = app.mount('#app') </script>
 
 </body>
 
