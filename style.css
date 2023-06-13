@@ -39,9 +39,10 @@ body {
 
 #txtUsuario {
     position: absolute;
-    right: 200px;
+    right: 100px;
+    top:70px;
     width: 200px;
-    height: 50px;
+    height: 42px;
     border: none;
     border-radius: 20px;
 }
@@ -85,8 +86,8 @@ body {
     background-color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     border-radius: 2.5em;
-    text-align: justify;
-    font-size: small;
+    text-align:-webkit-auto;
+    font-size: 1.3em;
 
 }
 
@@ -148,7 +149,7 @@ h3 {
     border-radius: 20px;
 
     width: 100px;
-    height: 50px;
+    height: 25px;
 }
 
 ::-webkit-scrollbar {

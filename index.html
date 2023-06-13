@@ -17,7 +17,7 @@
 
 <body>
     <div class="grid-layout" id="app">
-
+            
         <div Class="Superior">
 
             <p><img :src="fotoGlobo" alt=""> </p>
@@ -59,10 +59,13 @@
                 <p>{{comentario2}} </p>
                 <div>
 
-                    <p v-for="comentario in nuevoComentario" :key="comentario.id">{{ comentario.usuario }} : {{
-                        comentario.comentario }}</p>
-                    <button id="btnEliminar" @click="eliminarComentario(comentario.id)"
+                    <p v-for="comentario in nuevoComentario" :key="comentario.id" >{{ comentario.usuario }} : {{
+                        comentario.comentario }} 
+                        <button id="btnEliminar" @click="eliminarComentario(comentario.id)"
                         v-if="mostrarBtn">Eliminar</button>
+
+                    </p>
+                    
                 </div>
 
                 <div>
