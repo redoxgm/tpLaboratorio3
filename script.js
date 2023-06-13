@@ -71,20 +71,21 @@ const app = Vue.createApp({
                 this.comentario = ''
             }
             else {
+                this.mostrarBtn = true;
                 this.mostrarError = true
             }
         },
-        eliminarComentario(id) {
-            
-            const index = this.nuevoComentario.findIndex(comentario => comentario.id === id)
-            if (index !== -1) {
-                this.nuevoComentario.splice(index, 1)
+        eliminarComentario(indice) {
+            this.nuevoComentario = this.nuevoComentario.filter((value, index) => index !== indice)
+            //const index = this.nuevoComentario.findIndex(comentario => comentario.id === id)
+            //if (index !== -1) {
+              //  this.nuevoComentario.splice(index, 1)
                 
             }
          
         }
 
     }
-}
+
 
 )
